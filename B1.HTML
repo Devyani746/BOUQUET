@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouquet with Stems and Images</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f3e9;
+            margin: 0;
+        }
+
+        .bouquet {
+            position: relative;
+            width: 260px; /* Adjust width based on total width of images */
+            height: 400px; /* Adjust height based on your preference */
+        }
+
+        .stem {
+            position: absolute;
+            bottom: 0;
+            width: 5px;
+            height: 380px;
+            background-color: green;
+        }
+
+        .stem-1 { left: 0px; transform: rotate(-28deg); }
+        .stem-2 { left: 65px; transform: rotate(-15deg); }
+        .stem-3 { left: 130px; transform: rotate(0deg); }
+        .stem-4 { left: 195px; transform: rotate(15deg); }
+        .stem-5 { left: 260px; transform: rotate(28deg); }
+
+        .image-container {
+            position: absolute;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            width: 260px; /* Adjust width based on total width of images */
+            margin-bottom: 10px;
+            right: 48%;
+        }
+
+        .image-container img {
+            width: 100px; /* Adjust image size */
+            height: 75x; /* Adjust image size */
+            margin-right: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bouquet">
+        <!-- Stems -->
+        <div class="stem stem-1"></div>
+        <div class="stem stem-2"></div>
+        <div class="stem stem-3"></div>
+        <div class="stem stem-4"></div>
+        <div class="stem stem-5"></div>
+
+        <!-- Images at the top -->
+        <div class="image-container">
+            <img src="http://cliparts.co/cliparts/8TA/b4B/8TAb4Be9c.gif" alt="Rose 1">
+            <img src="http://cliparts.co/cliparts/8TA/b4B/8TAb4Be9c.gif" alt="Rose 2">
+            <img src="http://cliparts.co/cliparts/8TA/b4B/8TAb4Be9c.gif" alt="Rose 3">
+            <img src="http://cliparts.co/cliparts/8TA/b4B/8TAb4Be9c.gif" alt="Rose 4">
+            <img src="http://cliparts.co/cliparts/8TA/b4B/8TAb4Be9c.gif" alt="Rose 5">
+        </div>
+    </div>
+</body>
+</html>

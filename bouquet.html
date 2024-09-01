@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realistic Bouquet of Roses</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f3e9;
+            margin: 0;
+        }
+
+        .bouquet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .rose-container{
+            position: relative;
+            width: 100px;
+            height: 250px;
+            margin: 10px;
+        }
+        .rose {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+
+            transition: transform 0.3s ease;
+            width: 100px;
+            height: 100px;
+        }
+
+        .rose:hover {
+            transform: scale(1.1);
+        }
+
+        .stem {
+            position: absolute;
+            width: 10px;
+            height: 150px;
+            background-color: green;
+            border-radius: 5px;
+            bottom: 0;
+            left: 45px;
+            z-index: -1;
+        }
+
+        .stem-1 { left: 52px; }
+        .stem-2 { left: 152px; }
+        .stem-3 { left: 252px; }
+    </style>
+</head>
+<body>
+    <div class="bouquet">
+        <!-- Realistic SVG Rose -->
+         <div class="rose-container">
+        <img class="rose" src="http://clipart-library.com/images/8TAb4Be9c.gif" alt="Realistic Rose">
+        <div class="stem stem-1"></div>
+    
+        
+        <img class="rose" src="http://clipart-library.com/images/8TAb4Be9c.gif" alt="Realistic Rose">
+        <div class="stem stem-2"></div>
+
+    
+        <img class="rose" src="http://clipart-library.com/images/8TAb4Be9c.gif" alt="Realistic Rose">
+        <div class="stem stem-3"></div>
+    </div>
+        <!-- Stems -->   
+        
+    </div>
+</body>
+</html>
